@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    restart: always
+    volumes:
+      - ./volumes/data:/data
+    ports:
+      - 8080:8080
